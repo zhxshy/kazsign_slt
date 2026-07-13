@@ -671,7 +671,7 @@ function renderErrorPatterns(container) {
   setTimeout(() => {
     const ctx = document.getElementById('chart-error-types');
     if (!ctx) return;
-    new Chart(ctx, { type: 'bar', data: { labels: ['Deletions', 'Insertions', 'Substitutions'], datasets: [{ data: [avgDelWorst, avgInsWorst, avgSubWorst], backgroundColor: ['rgba(239,68,68,0.6)', 'rgba(249,115,22,0.6)', 'rgba(234,179,8,0.6)'], borderRadius: 4, borderWidth: 0 }] } }, options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true, title: { display: true, text: 'Avg count', color: '#94a3b8' }, grid: { color: '#334155' } }, x: { grid: { display: false } } } } });
+    new Chart(ctx, { type: 'bar', data: { labels: ['Deletions', 'Insertions', 'Substitutions'], datasets: [{ data: [avgDelWorst, avgInsWorst, avgSubWorst], backgroundColor: ['rgba(239,68,68,0.6)', 'rgba(249,115,22,0.6)', 'rgba(234,179,8,0.6)'], borderRadius: 4, borderWidth: 0 }] }, options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true, title: { display: true, text: 'Avg count', color: '#94a3b8' }, grid: { color: '#334155' } }, x: { grid: { display: false } } } } });
   }, 100);
 }
 
